@@ -11,6 +11,7 @@ You need an [ngrok](https://ngrok.com) account.
 - create your twilio and ngrok accounts
 - execute: ngrok http 5000 <br/>
   (or use a different port, but you'll have to change it in [twilio2fb.py](https://github.com/sam46/facetwilio/blob/master/twilio2fb.py) too)
+- Go to your twilio phone number settings, copy **ngrok_https_url/sms** into the 'A MESSAGE COMES IN' webhook field <br/> ('ngrok_https_url' is the https url that ngrok generated in previous step)
 - go to [creds.py](https://github.com/sam46/facetwilio/blob/master/creds.py) and fill in your facebook and twilio information
 - run: python main.py
 
