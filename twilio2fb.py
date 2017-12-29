@@ -5,6 +5,7 @@ from fbchat.models import *
 from flask import Flask, request, redirect
 # from twilio.twiml.messaging_response import MessagingResponse
 
+port = 5100
 app = Flask(__name__)
 
 @app.route('/sms', methods=['GET', 'POST'])
@@ -28,4 +29,4 @@ def smsHandler():
 
 fclient = Client(creds.fb['email'], creds.fb['pwd'])
 def run():
-    app.run(debug=False)
+    app.run(debug=False, port=port)
