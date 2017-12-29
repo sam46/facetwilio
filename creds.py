@@ -6,8 +6,8 @@ fb = {
 }
 
 twilio = { 
-	'phone': '',  # '+1xxxxxxxxxx'
-	'twilio_phone': '', # '+1xxxxxxxxxx'
+	'phone': '',  # actual phone number '+1xxxxxxxxxx'
+	'twilio_phone': '', # twilio phone number '+1xxxxxxxxxx'
 	'sid': '', 
 	'auth': '' # auth token
 }
